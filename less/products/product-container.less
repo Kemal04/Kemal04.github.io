@@ -1,0 +1,113 @@
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+
+    & .product-card {
+        display: block;
+        border: 1px solid #C4C4C4;
+        padding: 5px;
+        width: 300px;
+        height: auto;
+
+        & .product-card__top-btn {
+            display: block;
+            text-align: center;
+            background-color: #000;
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 0;
+            margin: 5px 40px;
+            font-size: 14px;
+
+        }
+
+        & .product-card-img {
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & .product-card-img__img {
+                width: 220px;
+                height: auto;
+            }
+        }
+
+        & .product-card-body {
+            padding: 5px 20px;
+
+            & .product-card-body__header {
+                font-size: 13px;
+                font-weight: 400;
+                color: #000;
+            }
+
+            & .product-card-body__header--bold {
+                font-size: 13px;
+                font-weight: 700;
+                color: #000;
+            }
+
+            & .product-card-evaluation {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 30px;
+
+                & .product-card-evaluation__stars img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                & .product-card-evaluation__star-percent {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #EEA734;
+                    padding: 0 5px;
+                }
+
+                & .product-card-evaluation__star-number {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #000;
+                }
+            }
+
+        }
+
+        & .product-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 10px;
+
+            & .product-discount {
+                display: flex;
+                align-items: center;
+                background-color: #000;
+                text-decoration: none;
+                width: 100px;
+                padding: 5px 8px;
+
+                & .product-discount__icon {
+                    width: 30%;
+                    height: auto;
+                    margin-right: 10px;
+                }
+
+                & .product-discount__number {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+
+            & .product-card-footer__price {
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+}

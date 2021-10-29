@@ -1,0 +1,31 @@
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0;
+
+    & .lang {
+        margin-right: 30px;
+
+        & .lang__icon {
+            margin-right: 10px;
+            width: 16px;
+            height: auto;
+        }
+
+        & .lang__seperator {
+            margin: 0 5px;
+        }
+
+        & .lang__text {
+            text-decoration: none;
+            color: #ccc;
+            font-weight: 400;
+            font-size: 14, 5px;
+        }
+
+        & .lang__text--active {
+            color: #000;
+        }
+    }
+}

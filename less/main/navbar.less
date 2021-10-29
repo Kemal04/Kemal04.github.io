@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+    & .navbar__link {
+        text-decoration: none;
+        color: #333333;
+        margin-top: 25px;
+        padding: 6px;
+
+        &:hover {
+            border-bottom: 2px solid black;
+        }
+    }
+
+    & .navbar__link--active {
+        color: black;
+        font-weight: 700;
+        border-bottom: 2px solid black;
+    }
+}
