@@ -6,7 +6,9 @@
     margin: 25px 0;
 
     & .brand-card {
+        text-decoration: none;
         text-align: center;
+        color: black;
 
         & .brand-card__img {
             width: 64px;
@@ -14,12 +16,22 @@
             border: 1px solid black;
             border-radius: 50px;
             padding: 5px;
+            transition: 0.3s;
+
+            &:hover{
+                border: 1px solid red;
+            }
         }
 
         & .brand-card__text {
             margin-top: 10px;
             font-size: 11px;
             font-weight: 400;
+            transition: 0.3s;
+
+            &:hover{
+                color: red;
+            }
         }
     }
 }

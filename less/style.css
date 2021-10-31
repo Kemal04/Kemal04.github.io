@@ -98,7 +98,7 @@
   transition: 0.3s;
 }
 .header .search .search__input[placeholder] {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
 }
 .header .search .search__input:focus {
@@ -116,7 +116,7 @@
   width: 10%;
 }
 .header .userplace .userplace__icon {
-  width: 30px;
+  width: 25px;
   margin-right: 32px;
 }
 .navbar {
@@ -129,6 +129,7 @@
   color: #333333;
   margin-top: 25px;
   padding: 6px;
+  font-size: 14px;
 }
 .navbar .navbar__link:hover {
   border-bottom: 2px solid black;
@@ -146,7 +147,9 @@
   margin: 25px 0;
 }
 .brand-slider .brand-card {
+  text-decoration: none;
   text-align: center;
+  color: black;
 }
 .brand-slider .brand-card .brand-card__img {
   width: 64px;
@@ -154,11 +157,19 @@
   border: 1px solid black;
   border-radius: 50px;
   padding: 5px;
+  transition: 0.3s;
+}
+.brand-slider .brand-card .brand-card__img:hover {
+  border: 1px solid red;
 }
 .brand-slider .brand-card .brand-card__text {
   margin-top: 10px;
   font-size: 11px;
   font-weight: 400;
+  transition: 0.3s;
+}
+.brand-slider .brand-card .brand-card__text:hover {
+  color: red;
 }
 .top-nav {
   display: flex;
@@ -173,6 +184,11 @@
   border-radius: 40px;
   font-size: 18px;
   font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.top-nav .top-nav__btn:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .top-nav .top-nav__btn--bg-yellow {
   background-color: #F8C96F;
@@ -257,12 +273,8 @@
   padding: 50px 0;
 }
 .banner-double .banner-double__img {
-  margin-right: 50px;
   width: 100%;
   height: auto;
-}
-.banner-double .banner-double__img:last-child {
-  margin-right: 0;
 }
 .footer {
   background-color: black;
@@ -380,7 +392,7 @@
   display: block;
   border: 1px solid #C4C4C4;
   padding: 5px;
-  width: 300px;
+  width: 230px;
   height: auto;
 }
 .product-container .product-card .product-card__top-btn {
@@ -394,7 +406,7 @@
   font-size: 14px;
 }
 .product-container .product-card .product-card-img {
-  height: 350px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -473,7 +485,7 @@
 }
 .recommended-container .recommended-card {
   display: block;
-  width: 300px;
+  width: 230px;
   position: relative;
 }
 .recommended-container .recommended-card .recommended-card__img {
@@ -527,7 +539,7 @@
 }
 .look-container .look-card {
   display: block;
-  width: 300px;
+  width: 230px;
   position: relative;
 }
 .look-container .look-card .look-card__img {
@@ -582,7 +594,7 @@
   margin: 20px 0;
 }
 .simple-product .simple-card {
-  width: 300px;
+  width: 230px;
   position: relative;
 }
 .simple-product .simple-card .simple-card__img {
