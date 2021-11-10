@@ -11,3 +11,6 @@
   width: 100%;
   flex-wrap: wrap;
 }
+.search-app .search-product .search-card {
+  width: 230px;
+}
