@@ -1,0 +1,13 @@
+.search-app {
+  display: flex;
+  margin-top: 15px;
+}
+.search-app .search-filter {
+  width: 220px;
+  margin-right: 10px;
+}
+.search-app .search-product {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
