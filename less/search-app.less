@@ -12,8 +12,75 @@
         width: 100%;
         flex-wrap: wrap;
 
-        & .search-card{
+        & .search-card {
             width: 230px;
+            position: relative;
+
+            & .search-card-body {
+                padding: 5px;
+
+                & .search-card-body__header {
+                    font-size: 13px;
+                    font-weight: 300;
+                    margin-bottom: 5px;
+                }
+
+                & .search-card-price {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+
+                    & .search-card-price__number {
+                        font-size: 14px;
+                        font-weight: 700;
+                        margin-right: 5px;
+                    }
+
+                    & .search-card-price__number--line-throught {
+                        font-size: 9px;
+                        font-weight: 300;
+                        text-decoration: line-through;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            & .search-card-footer {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                & span {
+                    border-radius: 50%;
+                    width: 15px;
+                    padding: 10px;
+                    margin-right: 5px;
+                }
+
+                & .black {
+                    background-color: black;
+                }
+
+                & .red {
+                    background-color: red;
+                }
+
+                & .yellow {
+                    background-color: yellow;
+                }
+
+                & .green {
+                    background-color: green;
+                }
+
+                & .blue {
+                    background-color: blue;
+                }
+
+                & .light {
+                    background-color: rgb(192, 192, 192);
+                }
+            }
         }
     }
 }
