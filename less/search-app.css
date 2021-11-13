@@ -1,0 +1,72 @@
+.search-app {
+  display: flex;
+  margin-top: 15px;
+}
+.search-app .search-filter {
+  width: 220px;
+  margin-right: 10px;
+}
+.search-app .search-product {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.search-app .search-product .search-card {
+  width: 230px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.search-app .search-product .search-card .search-card-body {
+  padding: 5px;
+}
+.search-app .search-product .search-card .search-card-body .search-card-body__header {
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.search-app .search-product .search-card .search-card-body .search-card-price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.search-app .search-product .search-card .search-card-body .search-card-price .search-card-price__number {
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.search-app .search-product .search-card .search-card-body .search-card-price .search-card-price__number--line-throught {
+  font-size: 9px;
+  font-weight: 300;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+.search-app .search-product .search-card .search-card-footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.search-app .search-product .search-card .search-card-footer span {
+  border-radius: 50%;
+  width: 15px;
+  padding: 10px;
+  margin-right: 5px;
+}
+.search-app .search-product .search-card .search-card-footer .black {
+  background-color: black;
+}
+.search-app .search-product .search-card .search-card-footer .red {
+  background-color: red;
+}
+.search-app .search-product .search-card .search-card-footer .yellow {
+  background-color: yellow;
+}
+.search-app .search-product .search-card .search-card-footer .green {
+  background-color: green;
+}
+.search-app .search-product .search-card .search-card-footer .blue {
+  background-color: blue;
+}
+.search-app .search-product .search-card .search-card-footer .light {
+  background-color: #c0c0c0;
+}
