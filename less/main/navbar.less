@@ -39,32 +39,33 @@
                 box-shadow: inset 0 -2px 0 0 #000;
             }
 
-            & .nav-dropdown {
-                display: block;
+            .nav-dropdown {
+                display: none;
                 position: absolute;
+                background-color: #fff;
+                box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+                padding: 12px 16px;
+                height: auto;
                 width: 100%;
                 left: 0;
-                height: 350px;
-                background-color: #fff;
-                box-shadow: inset 0 0 1px 1px #ebebeb;
                 border-radius: 0 0 6px 6px;
 
                 & .nav-dropdown-center {
-                    box-sizing: border-box;
                     padding: 25px;
                     width: 100%;
+                    box-sizing: border-box;
 
                     & .nav-dropdown-row {
                         display: flex;
                         justify-content: space-between;
-                        width: 400px;
+                        height: auto;
 
                         & .nav-dropdown-column {
                             width: auto;
-                            height: 300px;
+                            height: auto;
                             float: left;
                             padding: 0 25px 0 1px;
-                            overflow: hidden;
+                            box-sizing: border-box;
 
                             & .nav-dropdown-box {
                                 margin-bottom: 10px;
@@ -72,20 +73,28 @@
                                 & .nav-dropdown-box__link {
                                     font-size: 15px;
                                     color: #333;
-                                    margin-bottom: 10px;
                                     text-decoration: none;
+                                    font-weight: 600;
 
-                                    & ul {
-                                        margin: 5px 0 0 0;
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
 
-                                        & li {
-                                            padding-bottom: 4px!important;
+                                & ul {
+                                    list-style: none;
+                                    margin-top: 10px;
 
-                                            & a {
-                                                color: #666;
-                                                font-size: 13px;
-                                                font-weight: normal;
-                                                text-decoration: none;
+                                    & li {
+                                        padding-bottom: 4px;
+
+                                        & a {
+                                            font-size: 13px;
+                                            color: #666;
+                                            text-decoration: none;
+
+                                            &:hover {
+                                                text-decoration: underline;
                                             }
                                         }
                                     }
@@ -94,6 +103,10 @@
                         }
                     }
                 }
+            }
+
+            &:hover .nav-dropdown {
+                display: block;
             }
         }
     }
