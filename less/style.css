@@ -4,18 +4,18 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-a .img-overlay {
+.img-overlay {
   position: absolute;
   top: 0;
   left: 0;
   padding-top: 15px;
 }
-a .img-overlay img {
+.img-overlay img {
   padding-left: 15px;
   display: block;
   margin-bottom: 10px;
 }
-a .img-overlay .img-overlay__text {
+.img-overlay .img-overlay__text {
   font-size: 14px;
   font-weight: 300;
   background-color: #000;
@@ -43,8 +43,8 @@ a .img-overlay .img-overlay__text {
   align-items: center;
   padding: 5px 0px;
 }
-.product-card-evaluation .product-card-evaluation__stars img {
-  width: 100%;
+.product-card-evaluation .product-card-evaluation__stars {
+  width: 60px;
   height: auto;
 }
 .product-card-evaluation .product-card-evaluation__star-percent {
