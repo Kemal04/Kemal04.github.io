@@ -199,6 +199,7 @@ a .img-overlay .img-overlay__text {
   width: 100%;
   left: 0;
   border-radius: 0 0 6px 6px;
+  z-index: 1;
 }
 .navbar .navbar-nav .nav-item .nav-dropdown .nav-dropdown-center {
   padding: 25px;
@@ -756,19 +757,19 @@ a .img-overlay .img-overlay__text {
   margin-right: 5px;
 }
 .search-app .search-product .search-card .search-card-footer .black {
-  background-color: black;
+  background-color: #202020;
 }
 .search-app .search-product .search-card .search-card-footer .red {
-  background-color: red;
+  background-color: #E21616;
 }
 .search-app .search-product .search-card .search-card-footer .yellow {
-  background-color: yellow;
+  background-color: #FAA958;
 }
 .search-app .search-product .search-card .search-card-footer .green {
-  background-color: green;
+  background-color: #353905;
 }
 .search-app .search-product .search-card .search-card-footer .blue {
-  background-color: blue;
+  background-color: #477B97;
 }
 .search-app .search-product .search-card .search-card-footer .light {
   background-color: #c0c0c0;
