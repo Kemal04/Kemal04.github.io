@@ -1,0 +1,27 @@
+@import url('../variables.less');
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 15px;
+
+    & img {
+        padding-left: 15px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    & .img-overlay__text {
+        font-size: 14px;
+        font-weight: 300;
+        background-color: @primary-color;
+        padding: 5px 20px;
+        color: #fff;
+    }
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}

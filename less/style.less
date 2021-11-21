@@ -1,3 +1,5 @@
+@import url('variables.less');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,30 +7,13 @@
     font-family: sans-serif;
 }
 
-.img-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 15px;
-
-    & img {
-        padding-left: 15px;
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    & .img-overlay__text {
-        font-size: 14px;
-        font-weight: 300;
-        background-color: #000;
-        padding: 5px 20px;
-        color: #fff;
-    }
+.text-decoration-none{
+    text-decoration: none;
+    color: #000;
 }
 
-.img-fluid {
-    width: 100%;
-    height: auto;
+.bg-black {
+    background-color: @primary-color;
 }
 
 .header-text {
@@ -40,36 +25,56 @@
     font-weight: 700;
 }
 
-.bg-black {
-    background-color: black;
-}
-
-.product-card-evaluation {
+.point {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 0px;
 
-    & .product-card-evaluation__stars{
+    & .point__stars {
         width: 60px;
         height: auto;
     }
 
-    & .product-card-evaluation__star-percent {
+    & .point__star-percent {
         font-size: 14px;
         font-weight: 700;
         color: #EEA734;
         padding: 0 5px;
     }
 
-    & .product-card-evaluation__star-number {
+    & .point__star-number {
         font-size: 12px;
         font-weight: 400;
-        color: #000;
+        color: @primary-color;
+    }
+}
+
+
+.product-discount {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    text-decoration: none;
+    width: 70px;
+    padding: 5px 8px;
+
+    & .product-discount__icon {
+        width: 30%;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    & .product-discount__number {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
     }
 }
 
 @import url('common/container.less');
+
+@import url('common/img.less');
 
 @import url('main/advertisement.less');
 
@@ -108,3 +113,4 @@
 @import url('products/simple-product.less');
 
 @import url('search-app.less');
+
