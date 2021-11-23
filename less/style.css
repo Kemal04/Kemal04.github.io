@@ -255,6 +255,27 @@
 .navbar .navbar-nav .nav-item .nav-dropdown .nav-dropdown-center .nav-dropdown-row .nav-dropdown-column .nav-dropdown-box ul li a:hover {
   text-decoration: underline;
 }
+.navbar .navbar-nav .nav-item .nav-dropdown .nav-dropdown-center .nav-dropdown-row .campaign-container {
+  display: flex;
+  justify-content: center;
+}
+.navbar .navbar-nav .nav-item .nav-dropdown .nav-dropdown-center .nav-dropdown-row .campaign-container .campaign-column {
+  margin-left: 15px;
+  width: 265px;
+  padding: 0;
+  text-align: right;
+  height: 300px;
+  float: left;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.navbar .navbar-nav .nav-item .nav-dropdown .nav-dropdown-center .nav-dropdown-row .campaign-container .campaign-column img {
+  margin-bottom: 15px;
+  height: 137px;
+  width: 265px;
+  border: 0.8px solid #e7e7e7;
+  border-radius: 6px;
+}
 .navbar .navbar-nav .nav-item:hover .nav-dropdown {
   display: block;
 }
