@@ -19,6 +19,7 @@
 
         & .product-main-image-container {
             width: 485px;
+            position: relative;
         }
     }
 
@@ -72,11 +73,32 @@
             display: flex;
             justify-content: start;
             align-items: center;
-            margin-top: 25px;
+            margin: 25px 0;
 
             & img {
                 width: 110px;
                 margin-right: 20px;
+            }
+        }
+
+        & .right-container-size {
+            display: flex;
+            align-items: center;
+
+            & div {
+                text-align: center;
+                padding: 5px;
+                margin-right: 15px;
+                border: 1px solid #ccc;
+                color: #7D7D7D;
+                min-width: 30px;
+                max-width: 40px;
+                cursor: pointer;
+            }
+
+            & .right-container-size--active{
+                color: #000;
+                border: 1px solid #000;
             }
         }
     }
