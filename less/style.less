@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: roboto;
-    src: url('../Roboto/Roboto-Regular.ttf');
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
 }
 
 * {
@@ -18,6 +18,10 @@
     align-items: center;
 }
 
+.d-block {
+    display: block !important;
+}
+
 .text-decoration-none {
     text-decoration: none;
     color: #000;
@@ -27,13 +31,12 @@
     background-color: @primary-color;
 }
 
-.header-text {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin: 20px 0;
-    font-size: 24px;
-    font-weight: 700;
+.border {
+    border: 1px solid #c4c4c4;
+}
+
+.mr-5 {
+    margin-right: 50px;
 }
 
 .point {
@@ -69,6 +72,7 @@
     text-decoration: none;
     width: 70px;
     padding: 5px 8px;
+    margin-top: 10px;
 
     & .product-discount__icon {
         width: 30%;
@@ -86,6 +90,8 @@
 @import url('common/container.less');
 
 @import url('common/img.less');
+
+@import url('common/section.less');
 
 @import url('main/advertisement.less');
 
@@ -117,14 +123,6 @@
 
 @import url('products/product-container.less');
 
-@import url('products/recommended-container.less');
-
-@import url('products/look-container.less');
-
-@import url('products/simple-product.less');
-
 @import url('search-app.less');
+
 @import url('product-detail.less');
-
-
-
