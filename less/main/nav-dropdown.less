@@ -1,0 +1,90 @@
+.nav-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    padding: 12px 16px;
+    height: auto;
+    width: 100%;
+    left: 0;
+    border-radius: 0 0 6px 6px;
+    z-index: 1;
+
+    & .nav-dropdown-center {
+        padding: 25px;
+        width: 100%;
+        box-sizing: border-box;
+
+        & .nav-dropdown-row {
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+
+            & .nav-dropdown-column {
+                width: auto;
+                height: auto;
+                float: left;
+                padding: 0 25px 0 1px;
+                box-sizing: border-box;
+
+                & .nav-dropdown-box {
+                    margin-bottom: 10px;
+
+                    & .nav-dropdown-box__link {
+                        font-size: 15px;
+                        color: #333;
+                        text-decoration: none;
+                        font-weight: 600;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    & ul {
+                        list-style: none;
+                        margin-top: 10px;
+
+                        & li {
+                            padding-bottom: 4px;
+
+                            & a {
+                                font-size: 13px;
+                                color: #666;
+                                text-decoration: none;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .campaign-container {
+                display: flex;
+                justify-content: center;
+
+                & .campaign-column {
+                    margin-left: 15px;
+                    width: 265px;
+                    padding: 0;
+                    text-align: right;
+                    height: 300px;
+                    float: left;
+                    box-sizing: border-box;
+                    overflow: hidden;
+
+                    & img {
+                        margin-bottom: 15px;
+                        height: 137px;
+                        width: 265px;
+                        border: 0.8px solid #e7e7e7;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
