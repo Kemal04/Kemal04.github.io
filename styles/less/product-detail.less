@@ -96,9 +96,74 @@
                 cursor: pointer;
             }
 
-            & .right-container-size--active{
+            & .right-container-size--active {
                 color: #000;
                 border: 1px solid #000;
+            }
+        }
+
+        & .right-container-button {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            margin: 20px 0;
+
+            & .right-container-button__add-basket {
+                background-color: #222222;
+                color: #fff;
+                padding: 20px 100px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            & .favorite-button {
+                cursor: pointer;
+
+                & .favorite-button__icon {
+                    width: 70px;
+                    height: auto;
+                    padding: 20px;
+                    margin-left: 20px;
+                    border: solid 1px #000;
+                    background-color: #fff;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        & .right-container-deliver {
+            display: flex;
+            flex-direction: column;
+            background-color: #E8E8E8;
+            padding: 10px 14px;
+            width: 360px;
+
+            & .deliver-card {
+                display: flex;
+                align-items: center;
+
+                & .deliver-card__icon{
+                    width: 100px;
+                }
+
+                & .deliver-card-body{
+                    display: block;
+                    margin-left: 10px;
+
+                    & .deliver-card-body__header{
+                        font-size: 14px;
+                        font-weight: 700;
+                        margin-bottom: 8px;
+                    }
+
+                    & .deliver-card-body__title{
+                        font-size: 12px;
+                        margin-bottom: 12px;
+                    }
+                }
             }
         }
     }
