@@ -28,7 +28,7 @@
 
         & .right-container__text {
             font-weight: 700;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
 
             & span {
                 font-weight: 400;
@@ -37,13 +37,14 @@
 
         & .right-container__text-muted {
             color: #787878;
+            
         }
 
         & .right-container__text-icon {
             font-weight: 700;
-            margin-top: 15px;
             display: flex;
             align-items: center;
+            margin-bottom: 25px;
 
             & span img {
                 border: 1px solid black;
@@ -73,7 +74,7 @@
             display: flex;
             justify-content: start;
             align-items: center;
-            margin: 25px 0;
+            margin-bottom: 25px;
 
             & img {
                 width: 110px;
@@ -84,6 +85,7 @@
         & .right-container-size {
             display: flex;
             align-items: center;
+            margin-bottom: 18px;
 
             & div {
                 text-align: center;
@@ -106,7 +108,7 @@
             display: flex;
             align-items: center;
             height: 50px;
-            margin: 20px 0;
+            margin-bottom: 20px;
 
             & .right-container-button__add-basket {
                 background-color: #222222;
@@ -139,28 +141,32 @@
             flex-direction: column;
             background-color: #E8E8E8;
             padding: 10px 14px;
-            width: 360px;
+            width: 306px;
+            margin-bottom: 25px;
 
             & .deliver-card {
                 display: flex;
-                align-items: center;
 
-                & .deliver-card__icon{
-                    width: 100px;
+                &:first-child {
+                    margin-bottom: 10px;
                 }
 
-                & .deliver-card-body{
+                & .deliver-card__icon {
+                    width: 50px;
+                }
+
+                & .deliver-card-body {
                     display: block;
                     margin-left: 10px;
 
-                    & .deliver-card-body__header{
-                        font-size: 14px;
+                    & .deliver-card-body__header {
+                        font-size: 12px;
                         font-weight: 700;
                         margin-bottom: 8px;
                     }
 
-                    & .deliver-card-body__title{
-                        font-size: 12px;
+                    & .deliver-card-body__title {
+                        font-size: 10px;
                         margin-bottom: 12px;
                     }
                 }
