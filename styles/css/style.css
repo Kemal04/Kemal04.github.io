@@ -1,6 +1,6 @@
 @font-face {
   font-family: roboto;
-  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+  src: url('../../fonts/Roboto/Roboto-Regular.ttf');
 }
 * {
   padding: 0;
@@ -204,6 +204,9 @@
   align-items: center;
   width: 10%;
 }
+.userplace .userplace-card {
+  color: #000;
+}
 .userplace .userplace-card img {
   width: 25px;
   height: 25px;
@@ -217,12 +220,46 @@
   position: absolute;
   background-color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  padding: 12px 16px;
   height: auto;
   width: 423px;
   right: 0;
   border-radius: 0 0 6px 6px;
   z-index: 1;
+}
+.basket-container .basket-container-center {
+  padding: 25px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.basket-container .basket-container-center .basket-container-row {
+  display: flex;
+  justify-content: space-between;
+}
+.basket-container .basket-container-center .basket-container-row img {
+  width: 101px;
+  height: 136px;
+}
+.basket-container .basket-container-center .basket-container-row .basket-right-container {
+  display: block;
+}
+.basket-container .basket-container-center .basket-container-row .basket-right-container .basket-right-container__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 15px;
+}
+.basket-container .basket-container-center .basket-container-row .basket-right-container .basket-right-container__text--muted {
+  color: #808080;
+}
+.basket-container .basket-container-center .basket-container-row .basket-right-container .basket-right-container__price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+}
+.basket-container .basket-container-center .basket-container-row .basket-right-container .basket-right-container__icon {
+  width: 20px;
+  height: 20px;
 }
 .navbar {
   display: flex;
