@@ -1,4 +1,4 @@
-.basket-container{
+.basket-container {
     display: none;
     position: absolute;
     background-color: #fff;
@@ -9,45 +9,76 @@
     border-radius: 0 0 6px 6px;
     z-index: 1;
 
-    & .basket-container-center{
+    & .basket-container-center {
         padding: 25px 20px;
         width: 100%;
         box-sizing: border-box;
 
-        & .basket-container-row{
+        & .basket-container-row {
             display: flex;
             justify-content: space-between;
 
-            & img{
+            & img {
                 width: 101px;
                 height: 136px;
             }
 
-            & .basket-right-container{
+            & .basket-right-container {
                 display: block;
 
-                & .basket-right-container__text{
+                & .basket-right-container__text {
                     font-size: 16px;
                     font-weight: 400;
                     color: #000;
                     margin-bottom: 15px;
                 }
 
-                & .basket-right-container__text--muted{
+                & .basket-right-container__text--muted {
                     color: #808080;
                 }
 
-                & .basket-right-container__price{
+                & .basket-right-container__price {
                     font-size: 18px;
                     font-weight: 700;
                     color: #000;
                     margin-bottom: 15px;
                 }
 
-                & .basket-right-container__icon{
+                & .basket-right-container__icon {
                     width: 20px;
                     height: 20px;
                 }
+            }
+        }
+
+        & .basket-container-footer {
+            display: block;
+            width: 100%;
+            border-top: 1px solid #F0F0F0;
+            padding-top: 20px;
+            margin-top: 20px;
+
+            & .basket-container-footer__text {
+                font-size: 18px;
+                font-weight: 400;
+                color: #000;
+                text-align: right;
+
+                & span {
+                    color: red;
+                    font-weight: 700;
+                }
+            }
+
+            & .basket-container-footer__view-bag{
+                background-color: #000;
+                display: block;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 700;
+                padding: 15px;
+                margin-top: 10px;
+                color: #fff;
             }
         }
     }
