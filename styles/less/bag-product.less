@@ -2,41 +2,83 @@
     display: flex;
     margin-top: 15px;
 
-
     & .bag-product-left {
         width: 80%;
 
-        & .shoping-free-container {
+        & .bag-product-left-container {
             background-color: #fff;
-            border: 1px solid #eee;
-            width: 100%;
-            display: block;
-            padding: 20px;
-            margin-bottom: 10px;
+            padding: 15px 50px;
+            height: 900px;
 
-            & .shoping-free-card {
+            & .bag-product-left-container__header {
+                margin-top: 35px;
+                margin-bottom: 15px;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            & .bag-product-left-container__btn{
+                display: inline-block;
+                font-size: 18px;
+                font-weight: 400;
+                padding: 5px 15px;
+                margin-top: 15px;
+                margin-bottom: 60px;
+                background-color: #dadada;
+                text-decoration: none;
+                color: #606060;
+            }
+
+            & .bag-product-left-container__btn-save{
+                display: block;
+                font-size: 18px;
+                font-weight: 700;
+                padding: 15px 85px;
+                background-color: #222222;
+                text-decoration: none;
+                color: #fff;
+            }
+
+            & .bag-product-row {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
-                margin-bottom: 5px;
 
-                & img {
-                    width: 40px;
-                    height: 40px;
+                & .bag-product-card {
+                    background-color: #FBFBFB;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+
+                    & .bag-product-card__img {
+                        width: 30px;
+                        margin-left: 150px;
+                    }
+
+                    & .bag-product-card__img--big {
+                        width: 39px;
+                    }
+
+                    & .bag-product-card__text{
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
                 }
+            }
 
-                & .shoping-free-card__text {
-                    font-size: 18px;
-                    font-weight: 500;
-                    color: #000;
-                }
+            & .bag-product-row--column {
+                flex-direction: column;
 
-                & .shoping-free-card__text--muted {
-                    font-weight: 300;
+                & .bag-product-card:first-child{
+                    margin-right: 0px;
+                    margin-bottom: 10px;
                 }
             }
         }
-
 
         & .bag-product-header {
             background-color: #fff;
@@ -81,11 +123,11 @@
             & .bag-product-card-right {
                 width: 70%;
 
-                & .bag-product-card-right__size{
+                & .bag-product-card-right__size {
                     font-weight: 700;
                     margin-bottom: 10px;
 
-                    & span{
+                    & span {
                         font-weight: 400;
                     }
                 }
@@ -97,12 +139,12 @@
                     margin-bottom: 20px;
                 }
 
-                & .bag-product-discount{
+                & .bag-product-discount {
                     display: flex;
                     justify-content: end;
                     margin: 10px 0;
 
-                    & .bag-product-discount__price{
+                    & .bag-product-discount__price {
                         font-size: 14px;
                         text-decoration: line-through;
                         color: #696969;
@@ -179,25 +221,6 @@
                 font-size: 12px;
                 color: #fff;
             }
-        }
-    }
-}
-
-.bag-product-counter {
-    font-size: 18px;
-    border: 1px solid #c4c4c4;
-    border-radius: 25px;
-    padding: 5px 15px;
-
-    & span{
-        border-right: 1px solid #c4c4c4;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 10px;
-
-        &:last-child{
-            border: none;
-            padding-right: 0;
         }
     }
 }
