@@ -14,10 +14,101 @@
         outline: none;
         border: 1px solid #4A4A4A;
 
-        &::placeholder{
+        &::placeholder {
             font-size: 14px;
             color: #B6B5B5;
         }
+    }
+
+    & .form-label {
+        display: inline-block;
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        user-select: none;
+
+        & .form-label__input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+
+            &:checked~.form-label__checkmark-checkbox {
+                background-color: #4A4A4A;
+
+                &:after {
+                    display: block;
+                }
+            }
+
+            &:checked~.form-label__checkmark-radio {
+                background-color: #4A4A4A;
+
+                &:after {
+                    display: block;
+                }
+            }
+        }
+
+        & .form-label__checkmark-checkbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #eee;
+
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            &:after {
+                left: 6px;
+                top: 3px;
+                width: 5px;
+                height: 10px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+
+        & .form-label__checkmark-radio {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #eee;
+            border-radius: 50%;
+
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            &:after {
+                top: 9px;
+                left: 9px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: white;
+            }
+        }
+
+        &:hover input~.form-label__checkmark-checkbox {
+            background-color: #ccc;
+        }
+
+        &:hover input~.form-label__checkmark-radio {
+            background-color: #ccc;
+        }
+
     }
 
     & .input-prepend {
@@ -29,13 +120,13 @@
         height: 60px;
         padding: 0 15px;
 
-        & .input-prepend__text{
+        & .input-prepend__text {
             color: #B6B5B5;
             font-size: 14px;
         }
     }
 
-    & .form-select{
+    & .form-select {
         width: 100%;
         height: 60px;
         margin-bottom: 25px;
@@ -43,7 +134,7 @@
         outline: none;
         border: 1px solid #4A4A4A;
 
-        & .form-select__option{
+        & .form-select__option {
             margin: 50px;
         }
     }

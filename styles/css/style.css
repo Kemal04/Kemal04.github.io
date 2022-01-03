@@ -1286,6 +1286,82 @@
   font-size: 14px;
   color: #B6B5B5;
 }
+.form .form-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  user-select: none;
+}
+.form .form-label .form-label__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.form .form-label .form-label__input:checked ~ .form-label__checkmark-checkbox {
+  background-color: #4A4A4A;
+}
+.form .form-label .form-label__input:checked ~ .form-label__checkmark-checkbox:after {
+  display: block;
+}
+.form .form-label .form-label__input:checked ~ .form-label__checkmark-radio {
+  background-color: #4A4A4A;
+}
+.form .form-label .form-label__input:checked ~ .form-label__checkmark-radio:after {
+  display: block;
+}
+.form .form-label .form-label__checkmark-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+.form .form-label .form-label__checkmark-checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.form .form-label .form-label__checkmark-checkbox:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.form .form-label .form-label__checkmark-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.form .form-label .form-label__checkmark-radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.form .form-label .form-label__checkmark-radio:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.form .form-label:hover input ~ .form-label__checkmark-checkbox {
+  background-color: #ccc;
+}
+.form .form-label:hover input ~ .form-label__checkmark-radio {
+  background-color: #ccc;
+}
 .form .input-prepend {
   display: flex;
   align-items: center;

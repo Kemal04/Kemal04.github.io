@@ -743,11 +743,21 @@
                 <div class="bag-product-left-container">
                     <div class="bag-product-row">
                         <div class="bag-product-card">
-                            <input class="input-radio" type="radio" name="radio" id="radio1">
+
+                            <label class="form-label">One
+                                <input type="radio" checked="checked" name="radio" class="form-label__input">
+                                <span class="form-label__checkmark-radio"></span>
+                            </label>
+
                             <img src="img/icons/kamaz.svg" class="bag-product-card__img bag-product-card__img--big">
                         </div>
                         <div class="bag-product-card">
-                            <input class="input-radio" type="radio" name="radio" id="radio2">
+
+                            <label class="form-label">One
+                                <input type="radio" name="radio" class="form-label__input">
+                                <span class="form-label__checkmark-radio"></span>
+                            </label>
+
                             <img src="img/icons/shop.svg" class="bag-product-card__img">
                         </div>
                     </div>
@@ -764,15 +774,17 @@
                             <input type="text" class="form__input" placeholder="E-mail">
                         </div>
                         <select name="" id="" class="form-select">
-                            <option class="form-select__option" value="City">City</option>
-                            <option class="form-select__option" value="City">City</option>
-                            <option class="form-select__option" value="City">City</option>
-                            <option class="form-select__option" value="City">City</option>
+                            <option value="City">City</option>
+                            <option value="City">City</option>
+                            <option value="City">City</option>
+                            <option value="City">City</option>
                         </select>
                         <input type="text" class="form__input" placeholder="*Adress">
                         <input type="text" class="form__input" placeholder="Note">
-                        <input type="checkbox" id="checkbox">
-                        <label for="checkbox">Get Approved</label>
+                        <label class="form-label">Get Approved
+                            <input type="checkbox" id="checkbox" class="form-label__input">
+                            <span class="form-label__checkmark-checkbox"></span>
+                        </label>
                     </form>
                     <div class="d-flex justify-content-center">
                         <a href="" class="bag-product-left-container__btn-save">
