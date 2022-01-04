@@ -28,7 +28,6 @@
         user-select: none;
 
         & .form-label__input {
-            position: absolute;
             opacity: 0;
             cursor: pointer;
 
@@ -80,8 +79,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 20px;
-            width: 20px;
+            height: 15px;
+            width: 15px;
             background-color: #eee;
             border-radius: 50%;
 
@@ -92,10 +91,10 @@
             }
 
             &:after {
-                top: 9px;
-                left: 9px;
-                width: 8px;
-                height: 8px;
+                top: 5px;
+                left: 5px;
+                width: 5px;
+                height: 5px;
                 border-radius: 50%;
                 background: white;
             }
@@ -121,8 +120,10 @@
         padding: 0 15px;
 
         & .input-prepend__text {
-            color: #B6B5B5;
+            color: #000;
             font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
     }
 
@@ -133,9 +134,6 @@
         padding: 0px 20px;
         outline: none;
         border: 1px solid #4A4A4A;
-
-        & .form-select__option {
-            margin: 50px;
-        }
+        color: #B6B5B5;
     }
 }

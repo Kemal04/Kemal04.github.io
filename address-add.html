@@ -741,26 +741,25 @@
         <div class="bag-product-container">
             <div class="bag-product-left">
                 <div class="bag-product-left-container">
-                    <div class="bag-product-row">
-                        <div class="bag-product-card">
+                    <form action="" class="form">
+                        <div class="bag-product-row">
+                            <div class="bag-product-card">
+                                <label class="form-label">
+                                    <input type="radio" checked="checked" name="radio" class="form-label__input">
+                                    <span class="form-label__checkmark-radio"></span>
+                                </label>
+                                <img src="img/icons/kamaz.svg" class="bag-product-card__img bag-product-card__img--big">
+                            </div>
+                            <div class="bag-product-card">
+                                <label class="form-label">
+                                    <input type="radio" name="radio" class="form-label__input">
+                                    <span class="form-label__checkmark-radio"></span>
+                                </label>
 
-                            <label class="form-label">One
-                                <input type="radio" checked="checked" name="radio" class="form-label__input">
-                                <span class="form-label__checkmark-radio"></span>
-                            </label>
-
-                            <img src="img/icons/kamaz.svg" class="bag-product-card__img bag-product-card__img--big">
+                                <img src="img/icons/shop.svg" class="bag-product-card__img">
+                            </div>
                         </div>
-                        <div class="bag-product-card">
-
-                            <label class="form-label">One
-                                <input type="radio" name="radio" class="form-label__input">
-                                <span class="form-label__checkmark-radio"></span>
-                            </label>
-
-                            <img src="img/icons/shop.svg" class="bag-product-card__img">
-                        </div>
-                    </div>
+                    </form>
                     <form action="" class="form">
                         <div class="form-flex">
                             <input type="text" class="form__input mr-2" placeholder="*First name">
@@ -770,8 +769,8 @@
                             <div class="input-prepend">
                                 <span class="input-prepend__text">+993</span>
                             </div>
-                            <input type="text" class="form__input mr-2" placeholder="*Phone number">
-                            <input type="text" class="form__input" placeholder="E-mail">
+                            <input type="number" class="form__input mr-2" placeholder="*Phone number" min="60000000" max="65999999" style="width: 718px;">
+                            <input type="email" class="form__input" placeholder="E-mail">
                         </div>
                         <select name="" id="" class="form-select">
                             <option value="City">City</option>

@@ -741,37 +741,49 @@
         <div class="bag-product-container">
             <div class="bag-product-left">
                 <div class="bag-product-left-container">
-                    <div class="bag-product-row">
-                        <div class="bag-product-card">
-                            <input class="input-radio" type="radio" name="radio" id="radio1">
-                            <img src="img/icons/kamaz.svg" class="bag-product-card__img bag-product-card__img--big">
+                    <form action="" class="form">
+                        <div class="bag-product-row">
+                            <div class="bag-product-card">
+                                <label class="form-label">
+                                    <input type="radio" checked id="radio" name="radio" class="form-label__input">
+                                    <span class="form-label__checkmark-radio"></span>
+                                </label>
+                                <img src="img/icons/kamaz.svg" class="bag-product-card__img bag-product-card__img--big">
+                            </div>
+                            <div class="bag-product-card">
+                                <label class="form-label">
+                                    <input type="radio" id="radio" name="radio" class="form-label__input">
+                                    <span class="form-label__checkmark-radio"></span>
+                                </label>
+                                <img src="img/icons/shop.svg" class="bag-product-card__img">
+                            </div>
                         </div>
-                        <div class="bag-product-card">
-                            <input class="input-radio" type="radio" name="radio" id="radio2">
-                            <img src="img/icons/shop.svg" class="bag-product-card__img">
+                        <div class="bag-product-left-container__header">
+                            Addresses
                         </div>
-                    </div>
-                    <div class="bag-product-left-container__header">
-                        Addresses
-                    </div>
-                    <div class="bag-product-row bag-product-row--column">
-                        <div class="bag-product-card">
-                            <input class="input-radio" type="radio" name="radio1" id="radio1">
-                            <span class="bag-product-card__text">Gawdan B , dom 34 , kw 56</span>
+                        <div class="bag-product-row bag-product-row--column">
+                            <div class="bag-product-card">
+                                <label class="form-label">Gawdan B , dom 34 , kw 56
+                                    <input type="radio" id="radio" name="radio" class="form-label__input">
+                                    <span class="form-label__checkmark-radio"></span>
+                                </label>
+                            </div>
+                            <div class="bag-product-card">
+                                <label class="form-label">Aytakow , dom 90 , kw 8
+                                    <input type="radio" id="radio" name="radio" class="form-label__input">
+                                    <span class="form-label__checkmark-radio"></span>
+                                </label>
+                            </div>
                         </div>
-                        <div class="bag-product-card">
-                            <input class="input-radio" type="radio" name="radio1" id="radio2">
-                            <span class="bag-product-card__text">Aytakow , dom 90 , kw 8</span>
-                        </div>
-                    </div>
-                    <a href="" class="bag-product-left-container__btn">
-                        Add new address
-                    </a>
-                    <div class="d-flex justify-content-center">
-                        <a href="" class="bag-product-left-container__btn-save">
-                            SAVE
+                        <a href="address-add.html" class="bag-product-left-container__btn">
+                            Add new address
                         </a>
-                    </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="" class="bag-product-left-container__btn-save">
+                                SAVE
+                            </a>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="bag-product-right">
