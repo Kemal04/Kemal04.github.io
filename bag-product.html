@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/css/style.css">
 </head>
 
-<body style="background-color: #E5E5E5;">
+<body>
 
     <a href="filter.html" class="advertisement">
         <div class="advertisement-banner">
@@ -36,16 +36,54 @@
 
         <div class="container">
             <div class="header">
-                <a href=""><img src="img/Logo.svg" class="header__logo"></a>
+                <a href="index.html"><img src="img/Logo.svg" class="header__logo"></a>
                 <div class="search">
                     <input class="search__input" type="text" name="" id=""
                         placeholder="Write the product, category or brand you are looking for">
                     <img src="img/icons/search.svg" class="search__icon">
                 </div>
                 <div class="userplace">
-                    <a href="" class="userplace-card"><img src="img/icons/heart.svg"></a>
-                    <a href="" class="userplace-card"><img src="img/icons/shopping-bag.svg"></a>
-                    <a href="" class="userplace-card"><img src="img/icons/user.svg"></a>
+                    <a href=" " class="userplace-card">
+                        <img src="img/icons/heart.svg">
+                    </a>
+                    <a href="" class="userplace-card">
+                        <img src="img/icons/shopping-bag.svg">
+                        <div class="basket-container">
+                            <div class="basket-container-center">
+                                <div class="basket-container-row">
+                                    <img src="img/detail/product (1).jpg " class="img-fluid">
+                                    <div class="basket-right-container">
+                                        <div class="basket-right-container__text basket-right-container__text--muted">
+                                            GLOWMODE FeatherFit Multi-WQdff</div>
+                                        <div class="basket-right-container__price">900 TMT</div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="basket-right-container__text">Size: XS</div>
+                                            <img src="img/icons/trash.svg" class="basket-right-container__icon">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="product-counter">
+                                                <span>-</span>
+                                                <span>1</span>
+                                                <span>+</span>
+                                            </div>
+                                            <div class="basket-right-container__text">Total:
+                                                <span class="basket-right-container__price">900TMT</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-container-footer">
+                                    <div class="basket-container-footer__text">Total: <span>900TMT</span></div>
+                                    <div class="basket-container-footer__view-bag">
+                                        VIEW BAG
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="userplace-card">
+                        <img src="img/icons/user.svg">
+                    </a>
                 </div>
             </div>
         </div>
@@ -726,10 +764,10 @@
                         <a href="filter.html" class="nav-item__link">FILTER</a>
                     </li>
                     <li class="nav-item">
-                        <a href="bag-product.html" class="nav-item__link">BAG PRODUCT</a>
+                        <a href="product-detail.html" class="nav-item__link">PRODUCT DETAIL</a>
                     </li>
                     <li class="nav-item">
-                        <a href="product-detail.html" class="nav-item__link">PRODUCT DETAIL</a>
+                        <a href="bag-product.html" class="nav-item__link">BAG PRODUCT</a>
                     </li>
                 </ul>
             </nav>
@@ -757,7 +795,12 @@
                 </div>
                 <div class="bag-product-card">
                     <div class="bag-product-card-left">
-                        <input type="checkbox">
+                        <form action="" class="form">
+                            <label class="form-label">
+                                <input type="checkbox" id="checkbox" class="form-label__input">
+                                <span class="form-label__checkmark-checkbox"></span>
+                            </label>
+                        </form>
                         <img src="img/detail/main.jpg" class="img-fluid">
                     </div>
                     <div class="bag-product-card-right">
@@ -805,7 +848,12 @@
                 </div>
                 <div class="bag-product-card">
                     <div class="bag-product-card-left">
-                        <input type="checkbox">
+                        <form action="" class="form">
+                            <label class="form-label">
+                                <input type="checkbox" id="checkbox" class="form-label__input">
+                                <span class="form-label__checkmark-checkbox"></span>
+                            </label>
+                        </form>
                         <img src="img/detail/main.jpg" class="img-fluid">
                     </div>
                     <div class="bag-product-card-right">
@@ -870,7 +918,7 @@
 
 
     <footer class="footer">
-        <div class="container d-flex">
+        <div class="container d-flex justify-content-between">
             <div class="footer-card">
                 <div class="footer-card__title">COMPANY INFO</div>
                 <a href="" class="footer-card__link">About</a>

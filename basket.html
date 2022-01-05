@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/css/style.css">
 </head>
 
-<body style="background-color: #E5E5E5;">
+<body>
 
     <a href="filter.html" class="advertisement">
         <div class="advertisement-banner">
@@ -747,20 +747,32 @@
                                 <label class="form-label">
                                     <input type="radio" checked id="radio" name="radio" class="form-label__input">
                                     <span class="form-label__checkmark-radio"></span>
+                                    <div class="bag-product-card-header">
+                                        <img src="img/icons/kamaz.svg"
+                                            class="bag-product-card-header__img bag-product-card-header__img--big"
+                                            style="margin-right: 4px;">
+                                        <div class="bag-product-card-header__text">Delivery</div>
+                                    </div>
                                 </label>
-                                <img src="img/icons/kamaz.svg" class="bag-product-card__img bag-product-card__img--big">
                             </div>
                             <div class="bag-product-card">
                                 <label class="form-label">
-                                    <input type="radio" id="radio" name="radio" class="form-label__input">
+                                    <input type="radio" checked id="radio" name="radio" class="form-label__input">
                                     <span class="form-label__checkmark-radio"></span>
+                                    <div class="bag-product-card-header">
+                                        <img src="img/icons/shop.svg"
+                                            class="bag-product-card-header__img bag-product-card-header__img"
+                                            style="margin-right: 7px;">
+                                        <div class="bag-product-card-header__text">Pickup</div>
+                                    </div>
                                 </label>
-                                <img src="img/icons/shop.svg" class="bag-product-card__img">
                             </div>
                         </div>
-                        <div class="bag-product-left-container__header">
-                            Addresses
-                        </div>
+                    </form>
+                    <div class="bag-product-left-container__header">
+                        Addresses
+                    </div>
+                    <form action="" class="form">
                         <div class="bag-product-row bag-product-row--column">
                             <div class="bag-product-card">
                                 <label class="form-label">Gawdan B , dom 34 , kw 56
@@ -788,12 +800,14 @@
             </div>
             <div class="bag-product-right">
                 <div class="bag-product-right-container">
-                    <div class="bag-product-right-container__text bag-product-right-container__text--bold">
+                    <div
+                        class="bag-product-right-container__text bag-product-right-container__text--bold">
                         Order Summary
                     </div>
                     <div class="d-flex">
                         <div class="bag-product-right-container__text">Subtotal</div>
-                        <div class="bag-product-right-container__text bag-product-right-container__text--bold">
+                        <div
+                            class="bag-product-right-container__text bag-product-right-container__text--bold">
                             1500TMT
                         </div>
                     </div>
@@ -807,7 +821,7 @@
 
 
     <footer class="footer">
-        <div class="container d-flex">
+        <div class="container d-flex justify-content-between">
             <div class="footer-card">
                 <div class="footer-card__title">COMPANY INFO</div>
                 <a href="" class="footer-card__link">About</a>
