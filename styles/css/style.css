@@ -540,7 +540,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FCFCFC;
+  background-color: transparent;
   margin: 25px 0;
 }
 .brand-slider .brand-card {
@@ -567,49 +567,6 @@ a {
 }
 .brand-slider .brand-card .brand-card__text:hover {
   color: #222222;
-}
-.top-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
-}
-.top-nav .top-nav__btn {
-  padding: 10px 30px;
-  height: 36px;
-  text-align: center;
-  border-radius: 40px;
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.top-nav .top-nav__btn:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-.top-nav .top-nav__btn--bg-yellow {
-  background-color: #F8C96F;
-  color: #fff;
-}
-.top-nav .top-nav__btn--bg-red {
-  background-color: #f86f6f;
-  color: #fff;
-}
-.top-nav .top-nav__btn--bg-blue {
-  background-color: #9DCAF3;
-  color: #fff;
-}
-.top-nav .top-nav__btn--bg-green {
-  background-color: #86f86f;
-  color: #fff;
-}
-.top-nav .top-nav__btn--bg-img {
-  background-image: url('../../img/bg/1.jpg');
-  color: #000;
-}
-.top-nav .top-nav__btn--bg-black {
-  background-color: #000;
-  color: #fff;
 }
 .slider {
   display: flex;
@@ -802,6 +759,9 @@ a {
 .product-container .product-card .product-card__header--small {
   font-size: 14px;
 }
+.product-container .product-card .product-card__header--big {
+  font-size: 25px;
+}
 .product-container .product-card .product-card__top-btn {
   display: block;
   text-align: center;
@@ -911,7 +871,6 @@ a {
   margin-bottom: 10px;
   outline: none;
   border: 1px solid #e2e2e2;
-  border-radius: 5px;
   background-color: #fafafa;
   height: 25px;
   padding: 0 10px;
@@ -1250,11 +1209,11 @@ a {
 .form {
   margin: 35px 0;
 }
-.form .form-flex {
+.form-flex {
   display: flex;
   justify-content: space-between;
 }
-.form .form__input {
+.form__input {
   width: 100%;
   height: 60px;
   margin-bottom: 25px;
@@ -1262,11 +1221,11 @@ a {
   outline: none;
   border: 1px solid #4A4A4A;
 }
-.form .form__input::placeholder {
+.form__input::placeholder {
   font-size: 14px;
   color: #B6B5B5;
 }
-.form .form__input-square {
+.form__input-square {
   width: 70px;
   height: 70px;
   padding: 25px 20px;
@@ -1277,10 +1236,10 @@ a {
   outline: none;
   border: 1px solid #4A4A4A;
 }
-.form .form__input-square:last-child {
+.form__input-square:last-child {
   margin-right: 0;
 }
-.form .form-label {
+.form-label {
   display: flex;
   align-items: center;
   position: relative;
@@ -1288,23 +1247,23 @@ a {
   cursor: pointer;
   user-select: none;
 }
-.form .form-label .form-label__input {
+.form-label .form-label__input {
   opacity: 0;
   cursor: pointer;
 }
-.form .form-label .form-label__input:checked ~ .form-label__checkmark-checkbox {
+.form-label .form-label__input:checked ~ .form-label__checkmark-checkbox {
   background-color: #4A4A4A;
 }
-.form .form-label .form-label__input:checked ~ .form-label__checkmark-checkbox:after {
+.form-label .form-label__input:checked ~ .form-label__checkmark-checkbox:after {
   display: block;
 }
-.form .form-label .form-label__input:checked ~ .form-label__checkmark-radio {
+.form-label .form-label__input:checked ~ .form-label__checkmark-radio {
   background-color: #4A4A4A;
 }
-.form .form-label .form-label__input:checked ~ .form-label__checkmark-radio:after {
+.form-label .form-label__input:checked ~ .form-label__checkmark-radio:after {
   display: block;
 }
-.form .form-label .form-label__checkmark-checkbox {
+.form-label .form-label__checkmark-checkbox {
   position: absolute;
   top: 0;
   left: 0;
@@ -1312,12 +1271,12 @@ a {
   width: 20px;
   background-color: #eee;
 }
-.form .form-label .form-label__checkmark-checkbox:after {
+.form-label .form-label__checkmark-checkbox:after {
   content: "";
   position: absolute;
   display: none;
 }
-.form .form-label .form-label__checkmark-checkbox:after {
+.form-label .form-label__checkmark-checkbox:after {
   left: 6px;
   top: 3px;
   width: 5px;
@@ -1328,7 +1287,7 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.form .form-label .form-label__checkmark-radio {
+.form-label .form-label__checkmark-radio {
   position: absolute;
   top: 40%;
   left: 0;
@@ -1337,12 +1296,12 @@ a {
   background-color: #eee;
   border-radius: 50%;
 }
-.form .form-label .form-label__checkmark-radio:after {
+.form-label .form-label__checkmark-radio:after {
   content: "";
   position: absolute;
   display: none;
 }
-.form .form-label .form-label__checkmark-radio:after {
+.form-label .form-label__checkmark-radio:after {
   top: 5px;
   left: 5px;
   width: 5px;
@@ -1350,13 +1309,13 @@ a {
   border-radius: 50%;
   background: white;
 }
-.form .form-label:hover input ~ .form-label__checkmark-checkbox {
+.form-label:hover input ~ .form-label__checkmark-checkbox {
   background-color: #ccc;
 }
-.form .form-label:hover input ~ .form-label__checkmark-radio {
+.form-label:hover input ~ .form-label__checkmark-radio {
   background-color: #ccc;
 }
-.form .input-prepend {
+.input-prepend {
   display: flex;
   align-items: center;
   position: relative;
@@ -1368,17 +1327,17 @@ a {
   height: 60px;
   padding: 0 15px;
 }
-.form .input-prepend .input-prepend__text {
+.input-prepend .input-prepend__text {
   color: #000;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
 }
-.form .input-prepend img {
+.input-prepend img {
   width: 20px;
   height: auto;
 }
-.form .form-select {
+.form-select {
   width: 100%;
   height: 60px;
   margin-bottom: 25px;
