@@ -1,7 +1,5 @@
 import profileImg from '../../assets/imgs/profile.jpg'
 import profileImg2 from '../../assets/imgs/profile_2.jpg'
-import cardImg from '../../assets/imgs/card.png'
-import card2Img from '../../assets/imgs/card_2.png'
 import profileImgBack from '../../assets/icons/profile-bg.svg'
 import twitterImg from '../../assets/icons/twetter.svg'
 import insImg from '../../assets/icons/ins.svg'
@@ -18,6 +16,17 @@ import webImg from '../../assets/icons/web.svg'
 import figmaImg from '../../assets/icons/figma.svg'
 import psImg from '../../assets/icons/ps.svg'
 import jsImg from '../../assets/icons/js.svg'
+import gitImg from '../../assets/icons/git.svg'
+import { Link } from 'react-router-dom'
+import arzanImg from "../../assets/proj/arzan.png";
+import yakynyndaImg from "../../assets/proj/yakynynda.png";
+import blogImg from "../../assets/proj/blog.png";
+import hotelImg from "../../assets/proj/hotel.png";
+import asmanImg from "../../assets/proj/asman.png";
+import companyImg from "../../assets/proj/company.png";
+import foodImg from "../../assets/proj/food.png";
+import kdImg from "../../assets/proj/kd.png";
+import senagatImg from "../../assets/proj/senagat.png";
 
 const Home = () => {
 
@@ -28,60 +37,48 @@ const Home = () => {
                     <div className="col-xl-6 p-0">
                         <div className="bg-dark-light py-5 rounded-4 me-lg-4 me-0 d-flex justify-content-center position-relative" style={{ height: "600px" }}>
                             <img src={profileImgBack} alt="" className='img-fluid rounded-circle w-60' />
-                            <img src={profileImg} alt="" className='img-fluid rounded-circle w-50 position-absolute' style={{ top: "35%" }} />
+                            <img src={profileImg} alt="" className='img-fluid rounded-circle w-50 position-absolute' style={{ top: "33%" }} />
                         </div>
                     </div>
                     <div className="col-xl-6 p-0 mt-lg-0 mt-4">
                         <div className="bg-dark-light py-5 rounded-4 ms-lg-4 ms-0 text-center text-white d-flex justify-content-center flex-column align-items-center" style={{ height: "600px" }}>
                             <div className='bg-black d-inline-block px-3 py-1 rounded-3 small text-warning mb-4'>AVAILABLE FOR WORK</div>
-                            <div className='display-4 fw-semibold mb-4'>Product designer</div>
+                            <div className='display-4 fw-semibold mb-4'>Frontend Web Developer</div>
                             <div className='d-flex justify-content-center mb-4'>
-                                <div className='h5 w-75 text-secondary'>A passionate SaaS product designer based in the vibrant city of New York.</div>
+                                <div className='h5 w-75 text-secondary'>I'm Frontend web developer and I'm working using React js</div>
                             </div>
-                            <button className='btn btn-success rounded-5 px-4 py-2'>Book a Free Call</button>
+                            <button className='btn btn-success rounded-5 px-4 py-2'>See Projects</button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className='container mt-4'>
-                <div className='row justify-content-between'>
+                <div className='row justify-content-center'>
                     <div className='col-xl-auto mb-3 d-flex justify-content-center'>
-                        <div className='d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary' style={{ width: "240px" }}>
-                            <img src={twitterImg} alt="" style={{ width: "35px" }} />
-                            <div className='h4 ms-2'>Twitter</div>
-                        </div>
-                    </div>
-                    <div className='col-xl-auto mb-3 d-flex justify-content-center'>
-                        <div className='d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary' style={{ width: "240px" }}>
+                        <Link to='https://www.instagram.com/kemal_04_05/' target='_blank' className='text-decoration-none d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary w-sm-100'>
                             <img src={insImg} alt="" style={{ width: "35px" }} />
                             <div className='h4 ms-2'>Instagram</div>
-                        </div>
+                        </Link>
                     </div>
                     <div className='col-xl-auto mb-3 d-flex justify-content-center'>
-                        <div className='d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary' style={{ width: "240px" }}>
+                        <Link to='https://www.linkedin.com/in/kemal-hojayew-22766b287/' target='_blank' className='text-decoration-none d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary w-sm-100'>
                             <img src={linkImg} alt="" style={{ width: "35px" }} />
                             <div className='h4 ms-2'>LinkedIn</div>
-                        </div>
+                        </Link>
                     </div>
                     <div className='col-xl-auto mb-3 d-flex justify-content-center'>
-                        <div className='d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary' style={{ width: "240px" }}>
-                            <img src={twitterImg} alt="" style={{ width: "35px" }} />
+                        <Link to='https://github.com/Kemal04' target='_blank' className='text-decoration-none d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary w-sm-100'>
+                            <img src={gitImg} alt="" style={{ width: "35px" }} />
                             <div className='h4 ms-2'>Github</div>
-                        </div>
-                    </div>
-                    <div className='col-xl-auto mb-3 d-flex justify-content-center'>
-                        <div className='d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary' style={{ width: "240px" }}>
-                            <img src={twitterImg} alt="" style={{ width: "35px" }} />
-                            <div className='h4 ms-2'>Twitter</div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
 
             <div className='container my-5 py-5'>
-                <div className='text-success fw-semibold'>SERVICES</div>
-                <div className='display-4 text-white mt-3 mb-5 fw-semibold'>Client centric SaaS <br /><span className='text-secondary'>product design</span></div>
+                <div className='text-success fw-semibold text-uppercase'>Features</div>
+                <div className='display-4 text-white mt-3 mb-5 fw-semibold'>Customer service and <br /><span className='text-secondary'>awesome design</span></div>
                 <div className='row pt-5'>
                     <div className='col-xl-4 mb-3'>
                         <div className='bg-dark-light p-5 text-white rounded-4'>
@@ -112,43 +109,61 @@ const Home = () => {
                 <div className='display-4 text-white text-center mt-3 mb-5 fw-semibold'>Selected <span className='text-secondary'>Projects</span></div>
                 <div className='row pt-5'>
                     <div className='col-xl-4'>
-                        <img src={cardImg} alt="" className='img-fluid mb-4 rounded-4' />
-                        <img src={card2Img} alt="" className='img-fluid mb-4 rounded-4' />
-                        <img src={cardImg} alt="" className='img-fluid mb-4 rounded-4' />
+                        <Link to='https://github.com/Kemal04/arzantm' target='_blank' className='scale border border-5 rounded-4 mb-4'>
+                            <img src={arzanImg} alt="" className='img-fluid rounded-4' />
+                        </Link>
+                        <Link to='https://github.com/Kemal04/react-node-blog' target='_blank' className='scale border border-5 rounded-4 mb-4'>
+                            <img src={blogImg} alt="" className='img-fluid rounded-4' />
+                        </Link>
+                        <Link to='https://kemal04.github.io/Asman/' target='_blank' className='scale border border-5 rounded-4 mb-4'>
+                            <img src={asmanImg} alt="" className='img-fluid rounded-4' />
+                        </Link>
                     </div>
                     <div className='col-xl-4'>
-                        <img src={card2Img} alt="" className='img-fluid mb-4 rounded-4' />
-                        <img src={cardImg} alt="" className='img-fluid mb-4 rounded-4' />
-                        <img src={card2Img} alt="" className='img-fluid mb-4 rounded-4' />
+                        <Link to='https://kemal04.github.io/company/' target='_blank' className='scale border border-5 rounded-4 mb-4'>
+                            <img src={companyImg} alt="" className='img-fluid rounded-4' />
+                        </Link>
+                        <Link to='https://github.com/Kemal04/react-near-services' target='_blank' className='scale border border-5 rounded-4 mb-4'>
+                            <img src={yakynyndaImg} alt="" className='img-fluid rounded-4' />
+                        </Link>
+                        <Link to='https://kemal04.github.io/restaurant/' target='_blank' className='scale border border-5 rounded-4 mb-4'>
+                            <img src={foodImg} alt="" className='img-fluid rounded-4' />
+                        </Link>
                     </div>
                     <div className='col-xl-4'>
-                        <img src={cardImg} alt="" className='img-fluid mb-4 rounded-4' />
-                        <img src={card2Img} alt="" className='img-fluid mb-4 rounded-4' />
-                        <img src={cardImg} alt="" className='img-fluid mb-4 rounded-4' />
+                        <Link to='https://it.net.tm/hotels/' target='_blank' className='scale border border-5 rounded-4 mb-4'>
+                            <img src={hotelImg} alt="" className='img-fluid rounded-4' />
+                        </Link>
+                        <Link to='https://kemal04.github.io/KD_design/' target='_blank' className='scale border border-5 rounded-4 mb-4'>
+                            <img src={kdImg} alt="" className='img-fluid rounded-4' />
+                        </Link>
+                        <Link to='https://kemal04.github.io/Senagat/' target='_blank' className='scale border border-5 rounded-4 mb-4'>
+                            <img src={senagatImg} alt="" className='img-fluid rounded-4' />
+                        </Link>
                     </div>
                 </div>
             </div>
 
             <div className='container mt-5 pt-5'>
                 <div className='text-danger text-center fw-semibold'>SERVICES</div>
-                <div className='display-4 text-white text-center mt-3 mb-5 fw-semibold'>Review of some <br /> exemplary <span className='text-secondary'>good works</span></div>
+                <div className='display-4 text-white text-center mt-3 mb-5 fw-semibold'>Things I know and my <br /> programming <span className='text-secondary'>languages</span></div>
                 <div className='row pt-5'>
                     <div className='col-xl-3'>
                         <div className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
-                            SOME TEXT
+                            REACT JS
                         </div>
                         <div className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
-                            SOME TEXT
+                            SASS & LESS
                         </div>
                         <div className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
-                            SOME TEXT
+                            BOOTSTRAP
                         </div>
                     </div>
                     <div className='col-xl-6 mb-4 mb-xl-0'>
                         <div className='bg-dark-light px-5 py-4 rounded-4'>
-                            <div className='h4 mb-4' style={{ letterSpacing: "2px" }}>“We were fortunate to collaborate with Roger Hill on our latest SaaS project, and the experience was nothing short of exceptional. We highly recommend Roger Hill as a talented SaaS product designer."</div>
-                            <div className='text-info display-4 fw-semibold'>+230%</div>
-                            <div className='text-info small mt-2'>INCREASE IN CONVERSION RATE</div>
+                            <div className='h4 mb-2'>“ I am a passionate and creative Frontend web developer with 3-4 years of experience. Throughout my career, I have worked on various projects in different industries for a variety of companies, and I have developed a strong skill set. "</div>
+                            <div className='text-info display-4 fw-semibold'>+16</div>
+                            <div className='text-info small mt-2'>Number of projects I have done</div>
                             <hr />
                             <div className='d-flex align-items-center mt-3 pt-2'>
                                 <img src={profileImg} alt="" style={{ width: "80px" }} className='rounded-circle' />
@@ -161,13 +176,13 @@ const Home = () => {
                     </div>
                     <div className='col-xl-3'>
                         <div className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
-                            SOME TEXT
+                            TAILWIND CSS
                         </div>
                         <div className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
-                            SOME TEXT
+                            HTML & CSS
                         </div>
                         <div className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
-                            SOME TEXT
+                            JAVASCRIPT
                         </div>
                     </div>
                 </div>
@@ -347,15 +362,15 @@ const Home = () => {
                             <p className='text-center fs-18 mt-3'>I believe in the power of design to transform ideas into tangible, user-friendly software.</p>
                         </div>
                         <div className='d-flex align-items-center justify-content-between my-3'>
-                            <div className='bg-dark-light p-4 rounded-4'>
-                                <img src={twitterImg} alt="" className='img-fluid' />
-                            </div>
-                            <div className='bg-dark-light p-4 rounded-4'>
+                            <Link to='https://github.com/Kemal04' target='_blank' className='bg-dark-light p-4 rounded-4'>
+                                <img src={gitImg} alt="" className='img-fluid' />
+                            </Link>
+                            <Link to='https://www.linkedin.com/in/kemal-hojayew-22766b287/' target='_blank' className='bg-dark-light p-4 rounded-4'>
                                 <img src={linkImg} alt="" className='img-fluid' />
-                            </div>
-                            <div className='bg-dark-light p-4 rounded-4'>
+                            </Link>
+                            <Link to='https://www.instagram.com/kemal_04_05/' target='_blank' className='bg-dark-light p-4 rounded-4'>
                                 <img src={insImg} alt="" className='img-fluid' />
-                            </div>
+                            </Link>
                             <div className='bg-dark-light p-4 rounded-4'>
                                 <img src={twitterImg} alt="" className='img-fluid' />
                             </div>
@@ -364,7 +379,7 @@ const Home = () => {
                     <div className='col-xl-8'>
                         <div className='bg-dark-light rounded-4 p-5 d-flex flex-column align-items-center justify-content-center'>
                             <div className='display-2 text-center mb-5 fw-semibold'>Got a project in mind? <span className='text-secondary'>Let’s talk</span></div>
-                            <button className='btn btn-success btn-lg' style={{ padding: "30px 110px", borderRadius: "131px" }}>Book a Free Call</button>
+                            <Link to="mailto:kemalhojayew04@gmail.com" className='btn btn-success btn-lg' style={{ padding: "30px 110px", borderRadius: "131px" }}>Contact with Me</Link>
                         </div>
                     </div>
                 </div>
