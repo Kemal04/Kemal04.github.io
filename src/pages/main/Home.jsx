@@ -35,12 +35,12 @@ const Home = () => {
             <div className="container mt-4">
                 <div className="row m-0 justify-content-between align-items-center">
                     <div className="col-xl-6 p-0">
-                        <div data-aos="fade-right" className="bg-dark-light py-5 rounded-4 me-lg-4 me-0 d-flex justify-content-center position-relative" style={{ height: "600px" }}>
+                        <div data-aos="zoom-in" className="bg-dark-light py-5 rounded-4 me-lg-4 me-0 d-flex justify-content-center position-relative" style={{ height: "600px" }}>
                             <img src={profileImgBack} alt="" className='img-fluid rounded-circle w-60' />
                             <img src={profileImg} alt="" className='img-fluid rounded-circle w-50 position-absolute top-33' />
                         </div>
                     </div>
-                    <div data-aos="fade-left" className="col-xl-6 p-0 mt-lg-0 mt-4">
+                    <div data-aos="zoom-in" className="col-xl-6 p-0 mt-lg-0 mt-4">
                         <div className="bg-dark-light py-5 rounded-4 ms-lg-4 ms-0 text-center text-white d-flex justify-content-center flex-column align-items-center" style={{ height: "600px" }}>
                             <div className='bg-black d-inline-block px-3 py-1 rounded-3 small text-warning mb-4'>AVAILABLE FOR WORK</div>
                             <div className='display-4 fw-semibold mb-4'>Frontend Web Developer</div>
@@ -56,19 +56,19 @@ const Home = () => {
             <div className='container mt-4'>
                 <div className='row justify-content-center'>
                     <div className='col-xl-auto mb-3 d-flex justify-content-center'>
-                        <Link data-aos="fade-right" to='https://www.instagram.com/kemal_04_05/' target='_blank' className='text-decoration-none d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary w-sm-100'>
+                        <Link data-aos="zoom-in" to='https://www.instagram.com/kemal_04_05/' target='_blank' className='text-decoration-none d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary w-sm-100'>
                             <img src={insImg} alt="" style={{ width: "35px" }} />
                             <div className='h4 ms-2'>Instagram</div>
                         </Link>
                     </div>
                     <div className='col-xl-auto mb-3 d-flex justify-content-center'>
-                        <Link data-aos="fade-up" to='https://www.linkedin.com/in/kemal-hojayew-22766b287/' target='_blank' className='text-decoration-none d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary w-sm-100'>
+                        <Link data-aos="zoom-in" to='https://www.linkedin.com/in/kemal-hojayew-22766b287/' target='_blank' className='text-decoration-none d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary w-sm-100'>
                             <img src={linkImg} alt="" style={{ width: "35px" }} />
                             <div className='h4 ms-2'>LinkedIn</div>
                         </Link>
                     </div>
                     <div className='col-xl-auto mb-3 d-flex justify-content-center'>
-                        <Link data-aos="fade-left" to='https://github.com/Kemal04' target='_blank' className='text-decoration-none d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary w-sm-100'>
+                        <Link data-aos="zoom-in" to='https://github.com/Kemal04' target='_blank' className='text-decoration-none d-flex align-items-center bg-dark-light rounded-4 px-5 py-3 text-secondary w-sm-100'>
                             <img src={gitImg} alt="" style={{ width: "35px" }} />
                             <div className='h4 ms-2'>Github</div>
                         </Link>
@@ -77,8 +77,8 @@ const Home = () => {
             </div>
 
             <div className='container my-5 py-5'>
-                <div data-aos="fade-right" className='text-success fw-semibold text-uppercase'>Features</div>
-                <div data-aos="fade-right" className='display-4 text-white mt-3 mb-5 fw-semibold'>Customer service and <br /><span className='text-secondary'>awesome design</span></div>
+                <div data-aos="zoom-in" className='text-success fw-semibold text-uppercase'>Features</div>
+                <div data-aos="zoom-in" className='display-4 text-white mt-3 mb-5 fw-semibold'>Customer service and <br /><span className='text-secondary'>awesome design</span></div>
                 <div className='row pt-5'>
                     <div className='col-xl-4 mb-3'>
                         <div data-aos="zoom-in" className='bg-dark-light p-5 text-white rounded-4'>
@@ -105,8 +105,8 @@ const Home = () => {
             </div>
 
             <div className='container mt-5 pt-5'>
-                <div data-aos="fade-up" className='text-primary text-center fw-semibold'>SERVICES</div>
-                <div data-aos="fade-up" className='display-4 text-white text-center mt-3 mb-5 fw-semibold'>Selected <span className='text-secondary'>Projects</span></div>
+                <div data-aos="zoom-in" className='text-primary text-center fw-semibold'>SERVICES</div>
+                <div data-aos="zoom-in" className='display-4 text-white text-center mt-3 mb-5 fw-semibold'>Selected <span className='text-secondary'>Projects</span></div>
                 <div className='row pt-5'>
                     <div className='col-xl-4'>
                         <Link data-aos="zoom-in" to='https://github.com/Kemal04/arzantm' target='_blank' className='scale border border-5 rounded-4 mb-4'>
@@ -145,22 +145,22 @@ const Home = () => {
             </div>
 
             <div className='container mt-5 pt-5'>
-                <div data-aos="fade-up" className='text-danger text-center fw-semibold'>SERVICES</div>
-                <div data-aos="fade-up" className='display-4 text-white text-center mt-3 mb-5 fw-semibold'>Things I know and my <br /> programming <span className='text-secondary'>languages</span></div>
+                <div data-aos="zoom-in" className='text-danger text-center fw-semibold'>SERVICES</div>
+                <div data-aos="zoom-in" className='display-4 text-white text-center mt-3 mb-5 fw-semibold'>Things I know and my <br /> programming <span className='text-secondary'>languages</span></div>
                 <div className='row pt-5'>
                     <div className='col-xl-3'>
-                        <div data-aos="fade-right" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
+                        <div data-aos="zoom-in" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
                             REACT JS
                         </div>
-                        <div data-aos="fade-right" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
+                        <div data-aos="zoom-in" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
                             SASS & LESS
                         </div>
-                        <div data-aos="fade-right" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
+                        <div data-aos="zoom-in" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
                             BOOTSTRAP
                         </div>
                     </div>
                     <div className='col-xl-6 mb-4 mb-xl-0'>
-                        <div className='bg-dark-light px-5 py-4 rounded-4' data-aos="fade-up">
+                        <div className='bg-dark-light px-5 py-4 rounded-4' data-aos="zoom-in">
                             <div className='h4 mb-2'>“ I am a passionate and creative Frontend web developer with 3-4 years of experience. Throughout my career, I have worked on various projects in different industries for a variety of companies, and I have developed a strong skill set. "</div>
                             <div className='text-info display-4 fw-semibold'>+16</div>
                             <div className='text-info small mt-2'>Number of projects I have done</div>
@@ -175,13 +175,13 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='col-xl-3'>
-                        <div data-aos="fade-left" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
+                        <div data-aos="zoom-in" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
                             TAILWIND CSS
                         </div>
-                        <div data-aos="fade-left" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
+                        <div data-aos="zoom-in" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
                             HTML & CSS
                         </div>
-                        <div data-aos="fade-left" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
+                        <div data-aos="zoom-in" className='bg-dark-light p-5 mb-4 rounded-4 text-secondary text-center h3'>
                             JAVASCRIPT
                         </div>
                     </div>
@@ -189,11 +189,11 @@ const Home = () => {
             </div>
 
             <div className='container my-5 py-5'>
-                <div data-aos="fade-right" className='text-warning fw-semibold'>SERVICES</div>
-                <div data-aos="fade-right" className='display-4 text-white mt-3 mb-5 fw-semibold'>Pioneering SaaS <br /> excellence<span className='text-secondary'> since 2015</span></div>
+                <div data-aos="zoom-in" className='text-warning fw-semibold'>SERVICES</div>
+                <div data-aos="zoom-in" className='display-4 text-white mt-3 mb-5 fw-semibold'>Pioneering SaaS <br /> excellence<span className='text-secondary'> since 2015</span></div>
                 <div className='row pt-5'>
                     <div className='col-xl-6'>
-                        <div className='bg-dark-light rounded-4 p-5 mb-4' data-aos="fade-right">
+                        <div className='bg-dark-light rounded-4 p-5 mb-4' data-aos="zoom-in">
                             <ul className="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
                                 <li className="nav-item bg-black p-1 rounded-start-2" role="presentation">
                                     <button className="nav-link active text-secondary rounded-2 py-1" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Experiences</button>
@@ -331,23 +331,23 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="fade-right" className='text-warning fw-semibold'>Available for work</div>
+                        <div data-aos="zoom-in" className='text-warning fw-semibold'>Available for work</div>
                         <div className='row align-items-center justify-content-between mt-4'>
-                            <div data-aos="fade-right" className='col-xl-3 col-6 d-flex justify-content-center'>
+                            <div data-aos="zoom-in" className='col-xl-3 col-6 d-flex justify-content-center'>
                                 <img src={webImg} alt="" className='rounded-4 bg-dark-light p-3 px-4' />
                             </div>
-                            <div data-aos="fade-right" className='col-xl-3 col-6 d-flex justify-content-center'>
+                            <div data-aos="zoom-in" className='col-xl-3 col-6 d-flex justify-content-center'>
                                 <img src={figmaImg} alt="" className='rounded-4 bg-dark-light p-3 px-4' />
                             </div>
-                            <div data-aos="fade-right" className='col-xl-3 col-6 d-flex justify-content-center'>
+                            <div data-aos="zoom-in" className='col-xl-3 col-6 d-flex justify-content-center'>
                                 <img src={psImg} alt="" className='rounded-4 bg-dark-light p-3 px-4' />
                             </div>
-                            <div data-aos="fade-right" className='col-xl-3 col-6 d-flex justify-content-center'>
+                            <div data-aos="zoom-in" className='col-xl-3 col-6 d-flex justify-content-center'>
                                 <img src={jsImg} alt="" className='rounded-4 bg-dark-light p-3 px-4' />
                             </div>
                         </div>
                     </div>
-                    <div className='col-xl-6 mt-lg-0 mt-5' data-aos="fade-left">
+                    <div className='col-xl-6 mt-lg-0 mt-5' data-aos="zoom-in">
                         <img src={profileImg2} alt="" className='img-fluid rounded-4' style={{ height: "700px", width: "100%", objectFit: "cover", objectPosition: "0% 0%" }} />
                     </div>
                 </div>
@@ -356,12 +356,12 @@ const Home = () => {
             <div className='container pt-5' style={{ marginTop: "100px" }}>
                 <div className='row'>
                     <div className='col-xl-4'>
-                        <div data-aos="fade-right" className='bg-dark-light rounded-4 p-5 d-flex flex-column justify-content-center align-items-center'>
+                        <div data-aos="zoom-in" className='bg-dark-light rounded-4 p-5 d-flex flex-column justify-content-center align-items-center'>
                             <img src={profileImg} alt="" style={{ width: "120px", marginTop: "-100px" }} className='rounded-circle border border-black border-4' />
                             <div className='h4 mt-5'>Kemal Hojayew</div>
                             <p className='text-center fs-18 mt-3'>I believe in the power of design to transform ideas into tangible, user-friendly software.</p>
                         </div>
-                        <div className='d-flex align-items-center justify-content-between my-3' data-aos="fade-right">
+                        <div className='d-flex align-items-center justify-content-between my-3' data-aos="zoom-in">
                             <Link to='https://github.com/Kemal04' target='_blank' className='bg-dark-light p-4 rounded-4'>
                                 <img src={gitImg} alt="" className='img-fluid' />
                             </Link>
@@ -377,7 +377,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='col-xl-8'>
-                        <div className='bg-dark-light rounded-4 p-5 d-flex flex-column align-items-center justify-content-center' data-aos="fade-left">
+                        <div className='bg-dark-light rounded-4 p-5 d-flex flex-column align-items-center justify-content-center' data-aos="zoom-in">
                             <div className='display-2 text-center mb-5 fw-semibold'>Got a project in mind? <span className='text-secondary'>Let’s talk</span></div>
                             <Link to="mailto:kemalhojayew04@gmail.com" className='btn btn-success btn-lg' style={{ padding: "30px 50px", borderRadius: "131px" }}>Contact with Me</Link>
                         </div>
