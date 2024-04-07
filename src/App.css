@@ -79,8 +79,16 @@ body {
     width: 240px !important;
 }
 
+.top-33 {
+    top: 25%;
+}
+
 @media screen and (min-device-width: 280px) and (max-device-width: 747px) {
     .w-sm-100 {
         width: 100% !important;
+    }
+
+    .top-33 {
+        top: 35%!important;
     }
 }

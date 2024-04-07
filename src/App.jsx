@@ -2,12 +2,20 @@ import { BrowserRouter as Router, Outlet, Route, Routes } from 'react-router-dom
 import './App.css'
 
 //COMPONENTS
-import { Footer, Navbar, ScrollToTop } from './components';
+import { Navbar, ScrollToTop } from './components';
 
 //PAGES
 import { Home } from './pages';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
+
+    useEffect(function () {
+        Aos.init({ duration: 1000 });
+    }, []);
+
     return (
         <>
             <Router>
